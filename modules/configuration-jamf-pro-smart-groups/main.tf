@@ -132,13 +132,13 @@ resource "jamfpro_smart_mobile_device_group" "group_last_checkin" {
 #   }
 # }
 
-resource "jamfpro_smart_mobile_device_group" "group_passcode_not_present" {
-  name = "*Passcode Not Present"
+# resource "jamfpro_smart_mobile_device_group" "group_passcode_not_present" {
+#   name = "*Passcode Not Present"
 
-  criteria {
-    name        = "Passcode Status"
-    priority    = 0
-    search_type = "is"
-    value       = "Not Present"
-  }
-}
+#   criteria {
+#     name        = "Passcode Status"
+#     priority    = 0
+#     search_type = "is"
+#     value       = "Not Present"
+#   }
+# }
