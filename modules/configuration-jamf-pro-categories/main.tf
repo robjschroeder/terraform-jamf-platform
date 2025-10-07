@@ -27,10 +27,10 @@ resource "jamfpro_category" "category_network" {
   priority = 9
 }
 
-resource "jamfpro_category" "category_printers" {
-  name     = "Printers"
-  priority = 9
-}
+# resource "jamfpro_category" "category_printers" {
+#   name     = "Printers"
+#   priority = 9
+# }
 
 resource "jamfpro_category" "category_productivity" {
   name     = "Productivity"
