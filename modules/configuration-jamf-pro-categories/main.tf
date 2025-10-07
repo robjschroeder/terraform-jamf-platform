@@ -17,15 +17,15 @@ resource "jamfpro_category" "category_communication" {
   priority = 9
 }
 
-# resource "jamfpro_category" "category_developer_tools" {
-#   name     = "Developer Tools"
-#   priority = 9
-# }
+resource "jamfpro_category" "category_developer_tools" {
+  name     = "Developer Tools"
+  priority = 9
+}
 
-# resource "jamfpro_category" "category_network" {
-#   name     = "Network Security"
-#   priority = 9
-# }
+resource "jamfpro_category" "category_network" {
+  name     = "Network Security"
+  priority = 9
+}
 
 resource "jamfpro_category" "category_printers" {
   name     = "Printers"
@@ -42,7 +42,7 @@ resource "jamfpro_category" "category_security_compliance" {
   priority = 9
 }
 
-resource "jamfpro_category" "category_uninstallers" {
-  name     = "Uninstallers"
-  priority = 9
-}
+# resource "jamfpro_category" "category_uninstallers" {
+#   name     = "Uninstallers"
+#   priority = 9
+# }
