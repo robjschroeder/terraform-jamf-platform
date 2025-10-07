@@ -121,16 +121,16 @@ resource "jamfpro_smart_mobile_device_group" "group_last_checkin" {
   }
 }
 
-resource "jamfpro_smart_mobile_device_group" "group_used_space_above_75" {
-  name = "*Used Storage above 75 percent"
+# resource "jamfpro_smart_mobile_device_group" "group_used_space_above_75" {
+#   name = "*Used Storage above 75 percent"
 
-  criteria {
-    name        = "Used Space Percentage"
-    priority    = 0
-    search_type = "more than"
-    value       = "75"
-  }
-}
+#   criteria {
+#     name        = "Used Space Percentage"
+#     priority    = 0
+#     search_type = "more than"
+#     value       = "75"
+#   }
+# }
 
 resource "jamfpro_smart_mobile_device_group" "group_passcode_not_present" {
   name = "*Passcode Not Present"
