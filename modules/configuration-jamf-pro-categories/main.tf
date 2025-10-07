@@ -22,10 +22,10 @@ resource "jamfpro_category" "category_communication" {
 #   priority = 9
 # }
 
-resource "jamfpro_category" "category_network" {
-  name     = "Network Security"
-  priority = 9
-}
+# resource "jamfpro_category" "category_network" {
+#   name     = "Network Security"
+#   priority = 9
+# }
 
 resource "jamfpro_category" "category_printers" {
   name     = "Printers"
