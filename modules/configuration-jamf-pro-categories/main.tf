@@ -17,10 +17,10 @@ resource "jamfpro_category" "category_communication" {
   priority = 9
 }
 
-resource "jamfpro_category" "category_developer_tools" {
-  name     = "Developer Tools"
-  priority = 9
-}
+# resource "jamfpro_category" "category_developer_tools" {
+#   name     = "Developer Tools"
+#   priority = 9
+# }
 
 resource "jamfpro_category" "category_network" {
   name     = "Network Security"
