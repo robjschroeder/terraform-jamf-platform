@@ -42,7 +42,7 @@ resource "jamfpro_category" "category_security_compliance" {
   priority = 9
 }
 
-resource "jamfpro_category" "category_uninstallers" {
-  name     = "Uninstallers"
-  priority = 9
-}
+# resource "jamfpro_category" "category_uninstallers" {
+#   name     = "Uninstallers"
+#   priority = 9
+# }
