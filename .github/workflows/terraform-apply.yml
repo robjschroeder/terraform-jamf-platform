@@ -1,0 +1,33 @@
+name: Terraform Apply (Manual)
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  terraform-apply:
+    name: Terraform Apply (Manual Approval)
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: 1.6.6
+
+      - name: Terraform Init
+        run: terraform init
+
+      - name: Terraform Apply
+        run: terraform apply -auto-approve
+        env:
+          TF_VAR_jamfpro_client_id: 83dda510-158a-4e47-b50b-49dda56219a3
+          TF_VAR_jamfpro_client_secret: CTk1Rvu92UhJED0q6LQjfRzkhyA2ZrJzyhaRNFbNctW4G47m-_AUGqt41-KamWzk
+          TF_VAR_jamfpro_instance_url: https://techitout.jamfcloud.com
+          TF_VAR_jamfpro_auth_method: oauth2
